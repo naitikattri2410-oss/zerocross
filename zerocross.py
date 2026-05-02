@@ -1,5 +1,5 @@
 def print_board(tic):
-    print("your game")
+    print("Current Board:")
     for row in tic:
         print(" ".join(row))
     print()
