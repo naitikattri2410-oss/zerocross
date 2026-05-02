@@ -5,7 +5,7 @@ def print_board(tic):
     print()
 
 
-def check_winner(tic, c):
+def check_winner(tic):
     return (
         (tic[0][0] == tic[1][1] == tic[2][2] != '_') or
         (tic[0][0] == tic[0][1] == tic[0][2] != '_') or
@@ -51,7 +51,7 @@ def main():
         print_board(tic)
 
         # for winner 
-        if check_winner(tic, c):
+        if check_winner(tic):
             print(f"{c} is winner")
             break
 
